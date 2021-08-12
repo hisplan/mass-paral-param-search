@@ -3,6 +3,7 @@
 ## Set Up
 
 ```bash
+mkdir -p outputs
 cd inputs
 gunzip 2_DT_2_CD45plus_dense.h5ad.gz
 ```
