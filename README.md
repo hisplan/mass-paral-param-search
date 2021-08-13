@@ -39,6 +39,8 @@ papermill sum.template.ipynb sum.results.ipynb \
     -p y 316
 ```
 
+`parameters` and `injected-parameters`
+
 ## Diabetes
 
 Q> Find a classifier that gives me the highest accuracy.
@@ -59,7 +61,8 @@ Runner
 - Add different classifiers to `experiments`.
 - Run Papermill's `execute_notebook` function from Python.
 - Use `sklearn_evaluation` to load up all the generated notebooks
-- Compare those tagged cells (e.g. `accuracy`, `roc`)
+- Compare those tagged cells (e.g. `confusion`, `accuracy`, `roc`)
+- Each classifier will have a notebook and a model in pickle format.
 
 ## Single-Cell
 
@@ -70,7 +73,7 @@ Original: [analysis.ipynb](single-cell/analysis.ipynb)
 Convert to template: [analysis.template.ipynb](single-cell/analysis.template.ipynb)
 
 - Parameterize
-    - `experiment_id = 0`
+    - `experiment_id = 000`
     - `hvg_n_top_genes = 5000`
     - `pca_n_comps = 50`
     - `n_neighbors = 30`
