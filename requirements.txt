@@ -11,3 +11,4 @@ jupyter>=1.0.0
 jupyterlab>=3.1.4
 papermill>=2.3.3
 ray>=1.5.2
+joblib>=0.17.0
