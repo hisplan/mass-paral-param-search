@@ -17,18 +17,26 @@ Q> How do I run a notebook from the terminal?
 
 Original: [sum.ipynb](intro/sum.ipynb)
 
+Change `x` and `y`, run the notebook from the terminal.
+
+```bash
+papermill sum.template.ipynb test.ipynb
+```
+
 Convert to template: [sum.template.ipynb](intro/sum.template.ipynb)
 
+- Make a copy.
+- Rename as `sum.template`.
 - Add headings.
-- Add a comment: `THESE VALUES SHOULD BE OVERRIDDEN`
-- Add a tag: `parameters'
+- Add a comment: `THESE VALUES SHOULD BE OVERRIDDEN AT THE EXECUTION TIME`
+- Add a tag: `parameters` (Jupyter Notebook vs. Jupyter Lab)
 
 Change `x` and `y`, run the notebook from the terminal.
 
 ```bash
 papermill sum.template.ipynb sum.results.ipynb \
-    -p x 2 \
-    -p y 5
+    -p x 12 \
+    -p y 316
 ```
 
 ## Diabetes
