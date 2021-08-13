@@ -84,6 +84,6 @@ Benefits
 
 ## References
 
-- Papermill
+- `Papermill`: https://github.com/nteract/papermill
 - `sklearn_evaluation`: https://sklearn-evaluation.readthedocs.io/en/stable/user_guide/NotebookCollection.html
-- Ray
+- `Ray`: https://docs.ray.io/en/master/walkthrough.html
