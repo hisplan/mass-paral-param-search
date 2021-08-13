@@ -1,4 +1,4 @@
-# Tracking Experiments using Jupyter Notebook
+# Tracking Computational Experiments using Jupyter Notebook
 
 ## Set Up
 
@@ -50,6 +50,7 @@ Original: [classifier.ipynb](diabetes/classifier.ipynb)
 Convert to template: [classifier.template.ipynb](diabetes/classifier.template.ipynb)
 
 - Import a bunch of scikit-learn classifiers.
+- Tag the confusion matrix cell with `confusion`.
 - Tag the accuracy cell with `accuracy`.
 - Tag the ROC curve with `roc`.
 
