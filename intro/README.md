@@ -20,6 +20,13 @@ Convert to template: [sum.template.ipynb](intro/sum.template.ipynb)
 - Add a comment: `THESE VALUES SHOULD BE OVERRIDDEN AT THE EXECUTION TIME`
 - Add a tag: `parameters` (Jupyter Notebook vs. Jupyter Lab)
 
+Jupyter Notebook
+![Tagging 01](../img/tagging-jn-01.png)
+![Tagging 02](../img/tagging-jn-02.png)
+
+Jupyter Lab
+![Tagging 02](../img/tagging-jylab.png)
+
 ### Run
 
 Change `x` and `y`, run the notebook from the terminal.
@@ -34,6 +41,8 @@ papermill sum.template.ipynb sum.results.ipynb \
 
 The cell tagged with `parameters` is the one that `papermill` looks for.
 
-The cell tagged with `injected-parameters` is the one that `papermill` injects your execution-time parameters into.
+`injected-parameters` is the cell that gets created by `papermill` with your execution-time parameters (i.e. your parameters are injected into this cell).
 
-Note that `papermill` does not delete the cell tagged with `parameters`, thus you will see sets of parameters, default ones and your injected parameters, but the default parameters will be overriden by your injected parameters.
+Note that `papermill` does not delete the cell tagged with `parameters`, thus you will see two sets of parameters, the default set of parameters and your injected parameters, but the default set of parameters will be overriden by your injected parameters because it comes before the injected ones.
+
+![parameters vs. injected-parameters](../img/injected-parameters.png)
