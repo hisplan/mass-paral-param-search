@@ -1,4 +1,7 @@
-# Tracking Computational Experiments using Jupyter Notebook
+# mass-paral-param-search
+
+- Massively Parallel Grid Parameter Search for scRNA-seq Analysis
+- Computational Experiment Tracking
 
 ## Set Up
 
