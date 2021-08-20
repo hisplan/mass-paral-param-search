@@ -18,7 +18,7 @@ Convert to template: [sum.template.ipynb](intro/sum.template.ipynb)
 - Rename as `sum.template`.
 - Add headings.
 - Add a comment: `THESE VALUES SHOULD BE OVERRIDDEN AT THE EXECUTION TIME`
-- Add a tag: `parameters` (Jupyter Notebook vs. Jupyter Lab)
+- Add a tag: `parameters`
 
 Jupyter Notebook
 ![Tagging 01](../img/tagging-jn-01.png)
