@@ -1,7 +1,7 @@
 # mass-paral-param-search
 
 - Massively Parallel Grid Parameter Search for scRNA-seq Analysis
-- Computational Experiment Tracking
+- Tracking Computational Experiments
 
 ## Set Up
 
