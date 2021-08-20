@@ -1,9 +1,24 @@
-# diabetes classification
+## Diabetes Classification
 
-## References
+Find a classifier that gives me the highest accuracy.
 
-- https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html
-- https://towardsdatascience.com/building-a-machine-learning-classifier-model-for-diabetes-4fca624daed0
-- https://towardsdatascience.com/end-to-end-data-science-example-predicting-diabetes-with-logistic-regression-db9bc88b4d16
-- https://towardsdatascience.com/machine-learning-workflow-on-diabetes-data-part-01-573864fcc6b8
-- https://towardsdatascience.com/machine-learning-workflow-on-diabetes-data-part-02-11262b7f7a5c
+### Preparation
+
+Original: [classifier.ipynb](diabetes/classifier.ipynb)
+
+- Initially uses the DecisionTree classifier.
+
+Convert to template: [classifier.template.ipynb](diabetes/classifier.template.ipynb)
+
+- Import a bunch of scikit-learn classifiers.
+- Tag the confusion matrix cell with `confusion`.
+- Tag the accuracy cell with `accuracy`.
+- Tag the ROC curve with `roc`.
+
+### Run
+
+- Add different classifiers to `experiments`.
+- Run Papermill's `execute_notebook` function from Python.
+- Use `sklearn_evaluation` to load up all the generated notebooks
+- Compare those tagged cells (e.g. `confusion`, `accuracy`, `roc`)
+- Each classifier will have a notebook and a model in pickle format.
